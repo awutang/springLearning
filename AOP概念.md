@@ -8,7 +8,8 @@
 ##### Spring中的AOP通过配置的方式实现，之前所讲的生成代理类部分Spring已经帮我们做了。
 * 配置：
   1. xml
-    1. aop:config aop:aspect aop(method pointcut)
+    1. aop:config aop:aspect aop:before(method pointcut)
+    2. 切入点表达式的写法：*.
   2. 注解
 * Spring会根据目标类是否实现了接口从而决定使用何种代理
   * 实现了接口采用的代理是基于接口的动态代理--jdk动态代理
